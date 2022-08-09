@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chime.mk
+    $(LOCAL_DIR)/superior_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chime-user \
-    aosp_chime-userdebug \
-    aosp_chime-eng
+    superior_chime-user \
+    superior_chime-userdebug \
+    superior_chime-eng

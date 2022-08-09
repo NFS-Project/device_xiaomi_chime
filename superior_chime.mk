@@ -11,13 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chime device
 $(call inherit-product, device/xiaomi/chime/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common SuperiorOS stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
+# Gapps
+BUILD_WITH_GAPPS := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_chime
+PRODUCT_NAME := superior_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115
